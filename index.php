@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 
-$login_button = '';
+
 
 if(isset($_GET["code"])){
     $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
